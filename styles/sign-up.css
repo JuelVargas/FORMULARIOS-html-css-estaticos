@@ -3,8 +3,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-}
+    font-family: 'Roboto',sans-serif; 
+} 
 
 .container {
     padding: 30px;
@@ -14,7 +14,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .formulario {
     width: 22rem;
     height: auto;
@@ -24,29 +23,28 @@
 }
 
 .form-head {
-    padding: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
-.form-titulo {
+.titulo {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
 }
 
-.form-titulo h2 {
-    font-size: 1.5rem;
+.titulo h2 {
+    margin-left: 20px ;
 }
 
-.logo-key {
+.logo {
     padding: 15px;
     background-color: #e5f8eb;
     color: #00ba34;
-    transform: rotate(225deg);
     border-radius: 50%;
-    margin-right: 10px;
+}
+
+.logo i{
+    margin: 0 3px;
 }
 
 .btn-close i {
@@ -54,6 +52,7 @@
 }
 
 .btn-close {
+    align-self: center;
     padding: 5px;
     margin: 0 10px;
     border-radius: 50%;
@@ -61,27 +60,22 @@
 }
 
 .texto {
-    font-size: 1rem;
+    margin-top: 20px;
     color: #585757;
-    margin: 10px 10px;
 }
 
-hr {
-    margin: 10px 0;
-    opacity: 0.5;
-}
 
 .form-body {
     display: flex;
-    height: 17rem;
     flex-direction: column;
-    justify-content: space-around;
-
+    justify-content: space-between;
+    height: 28rem;
 }
 
 label {
-    color: #4b4b4b;
+    color: #585757;
 }
+
 label span {
     color: red;
 }
@@ -89,36 +83,57 @@ label span {
 input {
     height: 2.5rem;
     padding-left: 10px;
+    color: rgb(97, 93, 93);
     border-radius: 10px;
-    border: 1px solid #ccc;
     outline: none;
+    border: 1px solid #ccc;
 }
 
 input[type="email"]:focus,
-input[type="password"]:focus{
+input[type="password"]:focus,
+input[type="date"]:focus{
     outline: 1px solid #2396ff;
     box-shadow: 0 0 5px #2396ff;
 }
 
-.check-caja {
+.separa {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.separa hr {
+    width: 23%;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #e8e8e8;
+    border: none;
+}
+.sub-text {
+    font-size: 0.9rem;
+    opacity: 0.5;
+}
+
+.check-box {
     display: flex;
     align-items: center;
 }
 
-.check-caja input{
+.check-box label {
+    margin-left: 10px;
+}
+#check{
     margin-right: 10px;
     width: 1rem;
     border: 1px solid #ccc;
 }
 
-.check-caja a{
-    margin-left: 5rem;
-    text-decoration: none;
-    color: #777676;
+.form-footer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    height: 8rem;
 }
-.check-caja a:visited {
-    color: #00ba34;
-}
+
 
 button{
     height: 3rem;
@@ -129,15 +144,15 @@ button{
     color: white;
 }
 
-.form-footer{
-    margin-top: 40px;
-    text-align: center;
+.text-link{
+    display: flex;
+    justify-content: center;
+    
 }
 
-.form-footer a{
+.text-link a {
+    margin-left: 5px;
     text-decoration: none;
     font-weight: bold;
     color: #0085ff;
 }
-
-
